@@ -5,10 +5,7 @@ O **CorpTech ITSM Analytics** é uma plataforma voltada para análise de dados d
 
 ---
 
-Plataforma Analítica ITSM — extração automatizada dos dados de chamados para um
-repositório central na Azure, consumido pelo Power BI.
-
-**Integrantes:** Wellington Grein · Lucas Felipe · Pedro Placidina
+**Integrantes:** Wellington Grein · Lucas Felipe · Pedro Placidina · Fellipe Prim
 **Disciplina:** Design e Arquitetura de Software II — DAS II
 *(projeto herdado de Tópicos Avançados em Programação — TAPR 2026/1)*
 
