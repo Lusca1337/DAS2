@@ -1,6 +1,9 @@
-# TAPR-2026-1-ITSM
+# 📊 CorpTech ITSM Analytics
 
-<img width="6493" height="2973" alt="Untitled-2026-03-20-1955" src="https://github.com/user-attachments/assets/54357159-8108-4ada-b124-c90fc4394fb8" />
+## 📌 Descrição do Projeto
+O **CorpTech ITSM Analytics** é uma plataforma voltada para análise de dados de suporte de TI, utilizando informações extraídas do Jira Service Management (JSM) e transformadas em dashboards no Power BI por meio de uma arquitetura baseada em Azure.
+
+---
 
 Plataforma Analítica ITSM — extração automatizada dos dados de chamados para um
 repositório central na Azure, consumido pelo Power BI.
