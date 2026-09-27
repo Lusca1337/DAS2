@@ -1,5 +1,6 @@
 from .comando import Agendador, ComandoComposto
 from .comandos import CarregarTabela
+from .estrategia_carga import TruncateEInsere, UpsertPorChave
 
 CARGAS = [
     # --- nível 1 ---
@@ -8,18 +9,21 @@ CARGAS = [
         ["id_fila", "cd_fila", "nm_fila", "ds_descricao", "fl_ativo",
          "dt_inclusao", "dt_atualizacao", "nm_sistema_origem",
          "cd_registro_origem"],
+        estrategia=TruncateEInsere(),
     ),
     CarregarTabela(
         "itsm.categoria",
         ["id_categoria", "cd_categoria", "nm_categoria", "ds_descricao",
          "fl_ativo", "dt_inclusao", "dt_atualizacao",
          "nm_sistema_origem", "cd_registro_origem"],
+        estrategia=TruncateEInsere(),
     ),
     CarregarTabela(
         "itsm.sla",
         ["id_sla", "cd_sla", "nm_sla", "qt_meta_minutos", "ds_descricao",
          "fl_ativo", "dt_inclusao", "dt_atualizacao", "nm_sistema_origem",
          "cd_registro_origem"],
+        estrategia=TruncateEInsere(),
     ),
     CarregarTabela(
         "itsm.cliente_organizacao",
@@ -50,6 +54,7 @@ CARGAS = [
          "id_cliente_organizacao", "id_fila_atual", "ds_titulo", "ds_descricao",
          "dt_inclusao", "dt_atualizacao", "nm_sistema_origem",
          "cd_registro_origem"],
+        estrategia=UpsertPorChave(),
     ),
 
     # --- nível 3 ---

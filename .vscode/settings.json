@@ -1,0 +1,8 @@
+{
+    "azureFunctions.deploySubpath": "TAPR-2026-1-ITSM\\src",
+    "azureFunctions.scmDoBuildDuringDeployment": true,
+    "azureFunctions.projectLanguage": "Python",
+    "azureFunctions.projectRuntime": "~4",
+    "debug.internalConsoleOptions": "neverOpen",
+    "azureFunctions.projectLanguageModel": 2
+}
